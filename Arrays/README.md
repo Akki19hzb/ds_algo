@@ -32,6 +32,6 @@
 
 	Longest K unique characters substring  (Variable Window gfg) 
 
-	longest substring without repeating characters 
+	longest substring without repeating characters (LC 3)
 
  

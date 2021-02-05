@@ -1,28 +1,26 @@
-{\rtf1}
+# Problems 
 
-Problems 
+	Left Rotation of the array by 1 
 
-Left Rotation of the array by 1 
+	Left Rotation of the array by D places 
 
-Left Rotation of the array by D places 
+	Leaders in an Array 
 
-Leaders in an Array 
+	Maximum Difference Problem (it's logic used in LC 121) 
 
-Maximum Difference Problem (it's logic used in LC 121) 
+	Stock Buy and Sell Problem (LeetCode 122) 
 
-Stock Buy and Sell Problem (LeetCode 122) 
+	Trapping Rainwater Problem (Lower Envelope) 
 
-Trapping Rainwater Problem (Lower Envelope) 
+	Maximum subarray sum (kadane's algo) 
 
-Maximum subarray sum (kadane's algo) 
+	Longest even-odd subarray(Not understood, longest subarray with given sum ) 
 
-Longest even-odd subarray(Not understood, longest subarray with given sum ) 
+	Maximum Circular sum subarray.(Extension of Kadane's Algo ) 
 
-Maximum Circular sum subarray.(Extension of Kadane's Algo ) 
+	Majority Element 
 
-Majority Element 
-
-Sliding Window Technique 
+## Sliding Window Technique 
 
 	Maximum sum subarray of size k (Fixed Window Problem --gfg ) 
 

@@ -6,9 +6,19 @@
 
 	https://leetcode.com/problems/largest-rectangle-in-histogram/submissions/ 
 	
+	https://leetcode.com/problems/maximal-rectangle/submissions/ (Binary) 
+
+	https://leetcode.com/problems/min-stack/ 
 
 # To Do
+	Implementation of stack using heap 
 
+	Celebrity problem 
+
+	Longest valid parentesis 
+
+	Iterative TOH
+	
 ## More Good Stack Problems 
 
 	1130. Minimum Cost Tree From Leaf Values 

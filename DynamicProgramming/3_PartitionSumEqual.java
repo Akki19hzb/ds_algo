@@ -3,6 +3,20 @@ Leetcode
 
 416. Partition Equal Subset Sum
 
+This is the base for Q11. DP of AV count the number of subset with given differnce 
+
+arr= [1,1,2,3] ; diff =1
+
+S1 - S2 = diff
+S1 + S2 = sum
+-----------------
+2S1 = diff+sum
+S1 = (diff+sum)/2
+int sum  = (diff+sum)/2
+S1 is the subset, so we need to find how many subset we can find as S1
+
+esp(nums, n, S1);
+
 
 */
 

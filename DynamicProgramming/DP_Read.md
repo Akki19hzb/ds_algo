@@ -6,7 +6,7 @@
 5. Minimum Sum Subset (can Skip)
 6. Target Sum (+/-)
 
-#U nbounded Knapsack
+# Unbounded Knapsack
 7. Rod Cutting Probem
 8. Coin Change Problem (No of ways)
 9. Coin Change Problem (Min no. of coins) --> Twist

@@ -15,3 +15,6 @@
 10. Longest Common Subsequence
 11. Longest Common Substring
 12. Print LCS (In depth understanding reequired)
+13. Longest Common Supersequence
+14. Delete Operation for Two Strings(Minimum no. of insertions and deletions)
+Minimum characters required to make a password strong --CISCO Hackerank Round 

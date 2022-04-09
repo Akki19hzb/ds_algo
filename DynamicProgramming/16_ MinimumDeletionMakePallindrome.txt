@@ -1,0 +1,8 @@
+Logic to find minimum number of deletion to find the pallindrome:
+                String length - length of LPS
+
+
+How to find LPS ?
+
+Refer Q.16
+LPS = LCS( string , rev(string))

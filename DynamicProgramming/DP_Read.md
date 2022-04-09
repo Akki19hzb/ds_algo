@@ -12,9 +12,17 @@
 9. Coin Change Problem (Min no. of coins) --> Twist
 
 # LCS
-10. Longest Common Subsequence
+10. Longest Common Subsequence (LCS)
 11. Longest Common Substring
 12. Print LCS (In depth understanding reequired)
-13. Longest Common Supersequence
+13. Shortest Common Supersequence (SCS)
 14. Delete Operation for Two Strings(Minimum no. of insertions and deletions)
-Minimum characters required to make a password strong --CISCO Hackerank Round 
+    Minimum characters required to make a password strong --CISCO Hackerank Round
+## LPS
+15. Longest Commond Pallindrome (LPS)
+16. Minimum deletion to get the LPS
+18. Minimum insertion to get the LPS
+
+#Subsequence
+17. Longest Repeating Subsequence
+

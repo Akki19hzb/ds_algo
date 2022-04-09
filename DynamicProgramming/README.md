@@ -23,7 +23,7 @@
 16. Minimum deletion to get the LPS
 18. Minimum insertion to get the LPS
 
-#Subsequence
+## Subsequence
 17. Longest Repeating Subsequence
 19. IsSubsequence
 

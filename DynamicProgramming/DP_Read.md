@@ -25,4 +25,5 @@
 
 #Subsequence
 17. Longest Repeating Subsequence
+19. IsSubsequence
 

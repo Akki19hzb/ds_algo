@@ -10,20 +10,21 @@ Explanation: The answer is "abc", with the length of 3.
 import java.util.*;
 class Solution {
     public int lengthOfLongestSubstring(String s) {
-        HashSet<Character> temp = new HashSet<Character>();
-        int a_pointer=0, b_pointer=0, res = 0;
-        while(b_pointer < s.length()){
-            if(!temp.contains(s.charAt(b_pointer))){
-                temp.add(s.charAt(b_pointer));
-                b_pointer++;
-                res = Math.max(res,temp.size());
+        HashSet<Character> hs =  new HashSet<>();
+        int i=0, j=0,res=0, n=s.length();
+        while(j<n){
+            char c = s.charAt(j);
+            if(!hs.contains(c)){
+                hs.add(c);
+                res = Math.max(res,j-i+1);
+                j++;
             }
             else{
-                temp.remove(s.charAt(a_pointer));
-                a_pointer++;
+                char p = s.charAt(i);
+                hs.remove(p);
+                i++;
             }
         }
         return res;
     }
-
 }

@@ -12,56 +12,58 @@ Output:
 4
 */
 
+//{ Driver Code Starts
+// Initial Template for Java
 
-import java.util.*;
-import java.lang.*;
 import java.io.*;
+import java.util.*;
 
-class GFG {
-    public static int longestKUnique(String s, int k){
+class GfG {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        while (t-- > 0) {
+            String s = sc.next();
+            int k = sc.nextInt();
+            Solution obj = new Solution();
+            System.out.println(obj.longestkSubstr(s, k));
+        }
+    }
+}
+// } Driver Code Ends
+
+
+// User function Template for Java
+
+class Solution {
+    public int longestkSubstr(String s, int k) {
+        // code here
         HashMap<Character,Integer> hm = new HashMap<>();
-        int i=0, j=0, len= s.length(), size =0, res =-1;
+        int i=0,j=0,size=0,res=0,n=s.length();
         
-        while(j<len){
-            if(!hm.containsKey(s.charAt(j))){
-                hm.put(s.charAt(j),1);
-            }
-            else{
-                hm.put(s.charAt(j), hm.get(s.charAt(j))+1);
-            }
+        while(j<n){
+            char c = s.charAt(j);
+            if(!hm.containsKey(c))
+                hm.put(c,1);
+            else
+                hm.put(c,hm.get(c)+1);
             size = hm.size();
-            if(size==k){
-                res = Math.max(res, j-i+1);
-            }
+            
+            if(size==k)
+                res = Math.max(res,j-i+1);
             else if(size>k){
-                while(size>k && i <= j){
-                    int val = hm.get(s.charAt(i))-1;
-                    if( val==0){
-                        hm.remove(s.charAt(i));
-                        size = hm.size();
-                    }
-                    else{
-                        hm.put(s.charAt(i), val);
+                while(size>k){
+                    char p = s.charAt(i);
+                    hm.put(p,hm.get(p)-1);
+                    if(hm.get(p)==0){
+                        hm.remove(p);
+                        size =hm.size();
                     }
                     i++;
                 }
             }
             j++;
         }
-        //System.out.println(i+" "+j);
-        return res ;
+        return res>0?res:-1;
     }
-
-    
-	public static void main (String[] args) {
-		//code
-		Scanner sc = new Scanner(System.in);
-		int t = sc.nextInt();
-		while(t-->0){
-		    String s = sc.next();
-		    int k = sc.nextInt();
-		    int res = longestKUnique(s,k);
-		    System.out.println(res);
-		}
-	}
 }

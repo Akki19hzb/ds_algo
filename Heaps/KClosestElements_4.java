@@ -12,7 +12,7 @@ class Solution {
     public List<Integer> findClosestElements(int[] arr, int k, int x) {
         List<Integer> res = new ArrayList<>();
         
-        //comparator for the pq
+        //comparator for the pq //using MIN HEAP
         PriorityQueue<int[]> pq = new PriorityQueue<>( (a, b) -> {
                                     if(a[0] == b[0])
                                         return a[1] - b[1];
@@ -25,7 +25,7 @@ class Solution {
             pq.add(a);
         }
         
-        while(k>0){
+        while(k>0){ //this puts the elements top of the min heap in  result and discarding the remaining. 
             int[] b = pq.poll();
             res.add(arr[b[1]]); //putting the element of the array using the index fetched from heap(priortiyQueue)
             k--;
